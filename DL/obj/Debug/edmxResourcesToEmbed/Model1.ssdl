@@ -1,0 +1,741 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DisponibilidadHorariosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Datos_Personales">
+    <Key>
+      <PropertyRef Name="Id_Datos_Personales" />
+    </Key>
+    <Property Name="Id_Datos_Personales" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="APaterno" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="AMaterno" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Edad" Type="int" Nullable="false" />
+    <Property Name="Lugar_de_Nacimiento" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Estado_Civil" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CURP" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Direccion" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Numero_Casa" Type="varchar" MaxLength="20" />
+    <Property Name="Numero_Celular" Type="varchar" MaxLength="20" />
+    <Property Name="Nombre_Licenciatura" Type="varchar" MaxLength="25" />
+    <Property Name="Institucion_Lic" Type="varchar" MaxLength="30" />
+    <Property Name="Periodo_Lic" Type="int" />
+    <Property Name="Año_Titulacion_Lic" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Maestria" Type="varchar" MaxLength="30" />
+    <Property Name="Institucion_Mae" Type="varchar" MaxLength="30" />
+    <Property Name="Periodo_Mae" Type="int" />
+    <Property Name="Año_Titulacion_Mae" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Doctorado" Type="varchar" MaxLength="30" />
+    <Property Name="Institucion_Doc" Type="varchar" MaxLength="30" />
+    <Property Name="Periodo_Doc" Type="int" />
+    <Property Name="Años_Titulacion_Doc" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Especializacion" Type="varchar" MaxLength="30" />
+    <Property Name="Institucion_Espe" Type="varchar" MaxLength="30" />
+    <Property Name="Periodo_Espe" Type="int" />
+    <Property Name="Año_Titulacion_Espe" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Curso" Type="varchar" MaxLength="30" />
+    <Property Name="Institucion_Curso" Type="varchar" MaxLength="30" />
+    <Property Name="Horas" Type="int" />
+    <Property Name="Fecha" Type="varchar" MaxLength="30" />
+    <Property Name="Idioma" Type="varchar" MaxLength="30" />
+    <Property Name="Habla" Type="varchar" MaxLength="30" />
+    <Property Name="Lee" Type="varchar" MaxLength="30" />
+    <Property Name="Escribe" Type="varchar" MaxLength="30" />
+    <Property Name="Dominio" Type="varchar" MaxLength="30" />
+    <Property Name="Actividad_Puesto" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Organizacion_Empresa" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Periodo" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Actividad_Puesto2" Type="varchar" MaxLength="30" />
+    <Property Name="Organizacion_Empresa2" Type="varchar" MaxLength="30" />
+    <Property Name="Periodo2" Type="varchar" MaxLength="30" />
+    <Property Name="Actividad_Puesto3" Type="varchar" MaxLength="30" />
+    <Property Name="Organizacion_Empresa3" Type="varchar" MaxLength="30" />
+    <Property Name="Periodo3" Type="varchar" MaxLength="30" />
+    <Property Name="Actividad_Puesto_Aca" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Institucion_Aca" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Periodo_Aca" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Actividad_Puesto_Aca2" Type="varchar" MaxLength="30" />
+    <Property Name="Institucion_Aca2" Type="varchar" MaxLength="30" />
+    <Property Name="Periodo_Aca2" Type="varchar" MaxLength="30" />
+    <Property Name="Actividad_Puesto_Aca3" Type="varchar" MaxLength="30" />
+    <Property Name="Institucion_Aca3" Type="varchar" MaxLength="30" />
+    <Property Name="Periodo_Aca3" Type="varchar" MaxLength="30" />
+    <Property Name="Ingenieria_Idustrial" Type="int" />
+    <Property Name="Ingenieria_Sistemas" Type="int" />
+    <Property Name="Tics" Type="int" />
+    <Property Name="Ingenieria_Gestion" Type="int" />
+    <Property Name="Ingenieria_Logistica" Type="int" />
+    <Property Name="Ingenieria_Industrial_Dis" Type="int" />
+    <Property Name="Contador" Type="int" />
+    <Property Name="Ingenieria_Mecatronica" Type="int" />
+    <Property Name="Ingenieria_Gestion_Dis" Type="int" />
+    <Property Name="Ingenieria_Administracion" Type="int" />
+    <Property Name="Nombre_Materia_Ant" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Carrera_Ant" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Semestre_Ant" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Nombre_Materia_Ant2" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Ant2" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Ant2" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Ant3" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Ant3" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Ant3" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Ant4" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Ant4" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Ant4" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Ant5" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Ant5" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Ant5" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Ant6" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Ant6" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Ant6" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Ant7" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Ant7" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Ant7" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Ant8" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Ant8" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Ant8" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Ant9" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Ant9" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Ant9" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Imp" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Imp" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Imp" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Imp2" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Imp2" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Imp2" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Imp3" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Imp3" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Imp3" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Imp4" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Imp4" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Imp4" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Imp5" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Imp5" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Imp5" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Imp6" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Imp6" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Imp6" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Imp7" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Imp7" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Imp7" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Imp8" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Imp8" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Imp8" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Imp9" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Imp9" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Imp9" Type="varchar" MaxLength="30" />
+    <Property Name="Nombre_Materia_Imp10" Type="varchar" MaxLength="30" />
+    <Property Name="Carrera_Imp10" Type="varchar" MaxLength="30" />
+    <Property Name="Semestre_Imp10" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Horarios">
+    <Key>
+      <PropertyRef Name="Id_Horarios" />
+    </Key>
+    <Property Name="Id_Horarios" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Lunes7a8" Type="varchar" MaxLength="15" />
+    <Property Name="Martes7a8" Type="varchar" MaxLength="15" />
+    <Property Name="Miercoles7a8" Type="varchar" MaxLength="15" />
+    <Property Name="Jueves7a8" Type="varchar" MaxLength="15" />
+    <Property Name="Viernes7a8" Type="varchar" MaxLength="15" />
+    <Property Name="Sabado7a8" Type="varchar" MaxLength="15" />
+    <Property Name="Lunes8a9" Type="varchar" MaxLength="15" />
+    <Property Name="Martes8a9" Type="varchar" MaxLength="15" />
+    <Property Name="Miercoles8a9" Type="varchar" MaxLength="15" />
+    <Property Name="Jueves8a9" Type="varchar" MaxLength="15" />
+    <Property Name="Viernes8a9" Type="varchar" MaxLength="15" />
+    <Property Name="Sabado8a9" Type="varchar" MaxLength="15" />
+    <Property Name="Lunes9a10" Type="varchar" MaxLength="15" />
+    <Property Name="Martes9a10" Type="varchar" MaxLength="15" />
+    <Property Name="Miercoles9a10" Type="varchar" MaxLength="15" />
+    <Property Name="Jueves9a10" Type="varchar" MaxLength="15" />
+    <Property Name="Viernes9a10" Type="varchar" MaxLength="15" />
+    <Property Name="Sabado9a10" Type="varchar" MaxLength="15" />
+    <Property Name="Lunes10a11" Type="varchar" MaxLength="15" />
+    <Property Name="Martes10a11" Type="varchar" MaxLength="15" />
+    <Property Name="Miercoles10a11" Type="varchar" MaxLength="15" />
+    <Property Name="Jueves10a11" Type="varchar" MaxLength="15" />
+    <Property Name="Viernes10a11" Type="varchar" MaxLength="15" />
+    <Property Name="Sabado10a11" Type="varchar" MaxLength="15" />
+    <Property Name="Lunes11a12" Type="varchar" MaxLength="15" />
+    <Property Name="Martes11a12" Type="varchar" MaxLength="15" />
+    <Property Name="Miercoles11a12" Type="varchar" MaxLength="15" />
+    <Property Name="Jueves11a12" Type="varchar" MaxLength="15" />
+    <Property Name="Viernes11a12" Type="varchar" MaxLength="15" />
+    <Property Name="Sabado11a12" Type="varchar" MaxLength="15" />
+    <Property Name="Lunes12a13" Type="varchar" MaxLength="15" />
+    <Property Name="Martes12a13" Type="varchar" MaxLength="15" />
+    <Property Name="Miercoles12a13" Type="varchar" MaxLength="15" />
+    <Property Name="Jueves12a13" Type="varchar" MaxLength="15" />
+    <Property Name="Viernes12a13" Type="varchar" MaxLength="15" />
+    <Property Name="Sabado12a13" Type="varchar" MaxLength="15" />
+    <Property Name="Lunes13a14" Type="varchar" MaxLength="15" />
+    <Property Name="Martes13a14" Type="varchar" MaxLength="15" />
+    <Property Name="Miercoles13a14" Type="varchar" MaxLength="15" />
+    <Property Name="Jueves13a14" Type="varchar" MaxLength="15" />
+    <Property Name="Viernes13a14" Type="varchar" MaxLength="15" />
+    <Property Name="Sabado13a14" Type="varchar" MaxLength="15" />
+    <Property Name="Lunes14a15" Type="varchar" MaxLength="15" />
+    <Property Name="Martes14a15" Type="varchar" MaxLength="15" />
+    <Property Name="Miercoles14a15" Type="varchar" MaxLength="15" />
+    <Property Name="Jueves14a15" Type="varchar" MaxLength="15" />
+    <Property Name="Viernes14a15" Type="varchar" MaxLength="15" />
+    <Property Name="Sabado14a15" Type="varchar" MaxLength="15" />
+    <Property Name="Lunes15a16" Type="varchar" MaxLength="15" />
+    <Property Name="Martes15a16" Type="varchar" MaxLength="15" />
+    <Property Name="Miercoles15a16" Type="varchar" MaxLength="15" />
+    <Property Name="Jueves15a16" Type="varchar" MaxLength="15" />
+    <Property Name="Viernes15a16" Type="varchar" MaxLength="15" />
+    <Property Name="Sabado15a16" Type="varchar" MaxLength="15" />
+    <Property Name="Lunes16a17" Type="varchar" MaxLength="15" />
+    <Property Name="Martes16a17" Type="varchar" MaxLength="15" />
+    <Property Name="Miercoles16a17" Type="varchar" MaxLength="15" />
+    <Property Name="Jueves16a17" Type="varchar" MaxLength="15" />
+    <Property Name="Viernes16a17" Type="varchar" MaxLength="15" />
+    <Property Name="Sabado16a17" Type="varchar" MaxLength="15" />
+    <Property Name="Lunes17a18" Type="varchar" MaxLength="15" />
+    <Property Name="Martes17a18" Type="varchar" MaxLength="15" />
+    <Property Name="Miercoles17a18" Type="varchar" MaxLength="15" />
+    <Property Name="Jueves17a18" Type="varchar" MaxLength="15" />
+    <Property Name="Viernes17a18" Type="varchar" MaxLength="15" />
+    <Property Name="Sabado17a18" Type="varchar" MaxLength="15" />
+    <Property Name="Lunes18a19" Type="varchar" MaxLength="15" />
+    <Property Name="Martes18a19" Type="varchar" MaxLength="15" />
+    <Property Name="Miercoles18a19" Type="varchar" MaxLength="15" />
+    <Property Name="Jueves18a19" Type="varchar" MaxLength="15" />
+    <Property Name="Viernes18a19" Type="varchar" MaxLength="15" />
+    <Property Name="Sabado18a19" Type="varchar" MaxLength="15" />
+    <Property Name="Lunes19a20" Type="varchar" MaxLength="15" />
+    <Property Name="Martes19a20" Type="varchar" MaxLength="15" />
+    <Property Name="Miercoles19a20" Type="varchar" MaxLength="15" />
+    <Property Name="Jueves19a20" Type="varchar" MaxLength="15" />
+    <Property Name="Viernes19a20" Type="varchar" MaxLength="15" />
+    <Property Name="Sabado19a20" Type="varchar" MaxLength="15" />
+    <Property Name="Lunes20a21" Type="varchar" MaxLength="15" />
+    <Property Name="Martes20a21" Type="varchar" MaxLength="15" />
+    <Property Name="Miercoles20a21" Type="varchar" MaxLength="15" />
+    <Property Name="Jueves20a21" Type="varchar" MaxLength="15" />
+    <Property Name="Viernes20a21" Type="varchar" MaxLength="15" />
+    <Property Name="Sabado20a21" Type="varchar" MaxLength="15" />
+    <Property Name="Lunes21a22" Type="varchar" MaxLength="15" />
+    <Property Name="Martes21a22" Type="varchar" MaxLength="15" />
+    <Property Name="Miercoles21a22" Type="varchar" MaxLength="15" />
+    <Property Name="Jueves21a22" Type="varchar" MaxLength="15" />
+    <Property Name="Viernes21a22" Type="varchar" MaxLength="15" />
+    <Property Name="Sabado21a22" Type="varchar" MaxLength="15" />
+    <Property Name="Id_Datos_Personales" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK__Horarios__Id_Dat__02FC7413">
+    <End Role="Datos_Personales" Type="Self.Datos_Personales" Multiplicity="0..1" />
+    <End Role="Horarios" Type="Self.Horarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Datos_Personales">
+        <PropertyRef Name="Id_Datos_Personales" />
+      </Principal>
+      <Dependent Role="Horarios">
+        <PropertyRef Name="Id_Datos_Personales" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="SP_Datos_Personales_Add" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Nombre" Type="varchar" Mode="In" />
+    <Parameter Name="APaterno" Type="varchar" Mode="In" />
+    <Parameter Name="AMaterno" Type="varchar" Mode="In" />
+    <Parameter Name="Edad" Type="int" Mode="In" />
+    <Parameter Name="Lugar_de_Nacimiento" Type="varchar" Mode="In" />
+    <Parameter Name="Estado_Civil" Type="varchar" Mode="In" />
+    <Parameter Name="CURP" Type="varchar" Mode="In" />
+    <Parameter Name="Direccion" Type="varchar" Mode="In" />
+    <Parameter Name="Numero_Casa" Type="varchar" Mode="In" />
+    <Parameter Name="Numero_Celular" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Licenciatura" Type="varchar" Mode="In" />
+    <Parameter Name="Institucion_Lic" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo_Lic" Type="int" Mode="In" />
+    <Parameter Name="Año_Titulacion_Lic" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Maestria" Type="varchar" Mode="In" />
+    <Parameter Name="Institucion_Mae" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo_Mae" Type="int" Mode="In" />
+    <Parameter Name="Año_Titulacion_Mae" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Doctorado" Type="varchar" Mode="In" />
+    <Parameter Name="Institucion_Doc" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo_Doc" Type="int" Mode="In" />
+    <Parameter Name="Años_Titulacion_Doc" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Especializacion" Type="varchar" Mode="In" />
+    <Parameter Name="Institucion_Espe" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo_Espe" Type="int" Mode="In" />
+    <Parameter Name="Año_Titulacion_Espe" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Curso" Type="varchar" Mode="In" />
+    <Parameter Name="Institucion_Curso" Type="varchar" Mode="In" />
+    <Parameter Name="Horas" Type="int" Mode="In" />
+    <Parameter Name="Fecha" Type="varchar" Mode="In" />
+    <Parameter Name="Idioma" Type="varchar" Mode="In" />
+    <Parameter Name="Habla" Type="varchar" Mode="In" />
+    <Parameter Name="Lee" Type="varchar" Mode="In" />
+    <Parameter Name="Escribe" Type="varchar" Mode="In" />
+    <Parameter Name="Dominio" Type="varchar" Mode="In" />
+    <Parameter Name="Actividad_Puesto" Type="varchar" Mode="In" />
+    <Parameter Name="Organizacion_Empresa" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo" Type="varchar" Mode="In" />
+    <Parameter Name="Actividad_Puesto2" Type="varchar" Mode="In" />
+    <Parameter Name="Organizacion_Empresa2" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo2" Type="varchar" Mode="In" />
+    <Parameter Name="Actividad_Puesto3" Type="varchar" Mode="In" />
+    <Parameter Name="Organizacion_Empresa3" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo3" Type="varchar" Mode="In" />
+    <Parameter Name="Actividad_Puesto_Aca" Type="varchar" Mode="In" />
+    <Parameter Name="Institucion_Aca" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo_Aca" Type="varchar" Mode="In" />
+    <Parameter Name="Actividad_Puesto_Aca2" Type="varchar" Mode="In" />
+    <Parameter Name="Institucion_Aca2" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo_Aca2" Type="varchar" Mode="In" />
+    <Parameter Name="Actividad_Puesto_Aca3" Type="varchar" Mode="In" />
+    <Parameter Name="Institucion_Aca3" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo_Aca3" Type="varchar" Mode="In" />
+    <Parameter Name="Ingenieria_Idustrial" Type="int" Mode="In" />
+    <Parameter Name="Ingenieria_Sistemas" Type="int" Mode="In" />
+    <Parameter Name="Tics" Type="int" Mode="In" />
+    <Parameter Name="Ingenieria_Gestion" Type="int" Mode="In" />
+    <Parameter Name="Ingenieria_Logistica" Type="int" Mode="In" />
+    <Parameter Name="Ingenieria_Industrial_Dis" Type="int" Mode="In" />
+    <Parameter Name="Contador" Type="int" Mode="In" />
+    <Parameter Name="Ingenieria_Mecatronica" Type="int" Mode="In" />
+    <Parameter Name="Ingenieria_Gestion_Dis" Type="int" Mode="In" />
+    <Parameter Name="Ingenieria_Administracion" Type="int" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant2" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant2" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant2" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant3" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant3" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant3" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant4" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant4" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant4" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant5" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant5" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant5" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant6" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant6" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant6" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant7" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant7" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant7" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant8" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant8" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant8" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant9" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant9" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant9" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp2" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp2" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp2" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp3" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp3" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp3" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp4" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp4" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp4" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp5" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp5" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp5" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp6" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp6" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp6" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp7" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp7" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp7" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp8" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp8" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp8" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp9" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp9" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp9" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp10" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp10" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp10" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_Datos_Personales_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id_Datos_Personales" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Datos_Personales_Editar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id_Datos_Personales" Type="int" Mode="In" />
+    <Parameter Name="Nombre" Type="varchar" Mode="In" />
+    <Parameter Name="APaterno" Type="varchar" Mode="In" />
+    <Parameter Name="AMaterno" Type="varchar" Mode="In" />
+    <Parameter Name="Edad" Type="int" Mode="In" />
+    <Parameter Name="Lugar_de_Nacimiento" Type="varchar" Mode="In" />
+    <Parameter Name="Estado_Civil" Type="varchar" Mode="In" />
+    <Parameter Name="CURP" Type="varchar" Mode="In" />
+    <Parameter Name="Direccion" Type="varchar" Mode="In" />
+    <Parameter Name="Numero_Casa" Type="varchar" Mode="In" />
+    <Parameter Name="Numero_Celular" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Licenciatura" Type="varchar" Mode="In" />
+    <Parameter Name="Institucion_Lic" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo_Lic" Type="int" Mode="In" />
+    <Parameter Name="Año_Titulacion_Lic" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Maestria" Type="varchar" Mode="In" />
+    <Parameter Name="Institucion_Mae" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo_Mae" Type="int" Mode="In" />
+    <Parameter Name="Año_Titulacion_Mae" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Doctorado" Type="varchar" Mode="In" />
+    <Parameter Name="Institucion_Doc" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo_Doc" Type="int" Mode="In" />
+    <Parameter Name="Años_Titulacion_Doc" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Especializacion" Type="varchar" Mode="In" />
+    <Parameter Name="Institucion_Espe" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo_Espe" Type="int" Mode="In" />
+    <Parameter Name="Año_Titulacion_Espe" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Curso" Type="varchar" Mode="In" />
+    <Parameter Name="Institucion_Curso" Type="varchar" Mode="In" />
+    <Parameter Name="Horas" Type="int" Mode="In" />
+    <Parameter Name="Fecha" Type="varchar" Mode="In" />
+    <Parameter Name="Idioma" Type="varchar" Mode="In" />
+    <Parameter Name="Habla" Type="varchar" Mode="In" />
+    <Parameter Name="Lee" Type="varchar" Mode="In" />
+    <Parameter Name="Escribe" Type="varchar" Mode="In" />
+    <Parameter Name="Dominio" Type="varchar" Mode="In" />
+    <Parameter Name="Actividad_Puesto" Type="varchar" Mode="In" />
+    <Parameter Name="Organizacion_Empresa" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo" Type="varchar" Mode="In" />
+    <Parameter Name="Actividad_Puesto2" Type="varchar" Mode="In" />
+    <Parameter Name="Organizacion_Empresa2" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo2" Type="varchar" Mode="In" />
+    <Parameter Name="Actividad_Puesto3" Type="varchar" Mode="In" />
+    <Parameter Name="Organizacion_Empresa3" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo3" Type="varchar" Mode="In" />
+    <Parameter Name="Actividad_Puesto_Aca" Type="varchar" Mode="In" />
+    <Parameter Name="Institucion_Aca" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo_Aca" Type="varchar" Mode="In" />
+    <Parameter Name="Actividad_Puesto_Aca2" Type="varchar" Mode="In" />
+    <Parameter Name="Institucion_Aca2" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo_Aca2" Type="varchar" Mode="In" />
+    <Parameter Name="Actividad_Puesto_Aca3" Type="varchar" Mode="In" />
+    <Parameter Name="Institucion_Aca3" Type="varchar" Mode="In" />
+    <Parameter Name="Periodo_Aca3" Type="varchar" Mode="In" />
+    <Parameter Name="Ingenieria_Idustrial" Type="int" Mode="In" />
+    <Parameter Name="Ingenieria_Sistemas" Type="int" Mode="In" />
+    <Parameter Name="Tics" Type="int" Mode="In" />
+    <Parameter Name="Ingenieria_Gestion" Type="int" Mode="In" />
+    <Parameter Name="Ingenieria_Logistica" Type="int" Mode="In" />
+    <Parameter Name="Ingenieria_Industrial_Dis" Type="int" Mode="In" />
+    <Parameter Name="Contador" Type="int" Mode="In" />
+    <Parameter Name="Ingenieria_Mecatronica" Type="int" Mode="In" />
+    <Parameter Name="Ingenieria_Gestion_Dis" Type="int" Mode="In" />
+    <Parameter Name="Ingenieria_Administracion" Type="int" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant2" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant2" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant2" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant3" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant3" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant3" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant4" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant4" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant4" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant5" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant5" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant5" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant6" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant6" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant6" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant7" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant7" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant7" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant8" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant8" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant8" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Ant9" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Ant9" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Ant9" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp2" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp2" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp2" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp3" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp3" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp3" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp4" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp4" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp4" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp5" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp5" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp5" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp6" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp6" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp6" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp7" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp7" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp7" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp8" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp8" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp8" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp9" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp9" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp9" Type="varchar" Mode="In" />
+    <Parameter Name="Nombre_Materia_Imp10" Type="varchar" Mode="In" />
+    <Parameter Name="Carrera_Imp10" Type="varchar" Mode="In" />
+    <Parameter Name="Semestre_Imp10" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_Datos_Personales_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_Datos_Personales_GetById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id_Datos_Personales" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_DatosANDHorariosDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id_Datos_Personales" Type="int" Mode="In" />
+    <Parameter Name="Id_Horarios" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_GetByIdDP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id_Datos_Personales" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Horarios_Add" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lunes7a8" Type="varchar" Mode="In" />
+    <Parameter Name="Martes7a8" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles7a8" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves7a8" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes7a8" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado7a8" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes8a9" Type="varchar" Mode="In" />
+    <Parameter Name="Martes8a9" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles8a9" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves8a9" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes8a9" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado8a9" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes9a10" Type="varchar" Mode="In" />
+    <Parameter Name="Martes9a10" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles9a10" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves9a10" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes9a10" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado9a10" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes10a11" Type="varchar" Mode="In" />
+    <Parameter Name="Martes10a11" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles10a11" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves10a11" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes10a11" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado10a11" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes11a12" Type="varchar" Mode="In" />
+    <Parameter Name="Martes11a12" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles11a12" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves11a12" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes11a12" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado11a12" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes12a13" Type="varchar" Mode="In" />
+    <Parameter Name="Martes12a13" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles12a13" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves12a13" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes12a13" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado12a13" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes13a14" Type="varchar" Mode="In" />
+    <Parameter Name="Martes13a14" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles13a14" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves13a14" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes13a14" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado13a14" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes14a15" Type="varchar" Mode="In" />
+    <Parameter Name="Martes14a15" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles14a15" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves14a15" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes14a15" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado14a15" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes15a16" Type="varchar" Mode="In" />
+    <Parameter Name="Martes15a16" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles15a16" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves15a16" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes15a16" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado15a16" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes16a17" Type="varchar" Mode="In" />
+    <Parameter Name="Martes16a17" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles16a17" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves16a17" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes16a17" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado16a17" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes17a18" Type="varchar" Mode="In" />
+    <Parameter Name="Martes17a18" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles17a18" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves17a18" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes17a18" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado17a18" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes18a19" Type="varchar" Mode="In" />
+    <Parameter Name="Martes18a19" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles18a19" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves18a19" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes18a19" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado18a19" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes19a20" Type="varchar" Mode="In" />
+    <Parameter Name="Martes19a20" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles19a20" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves19a20" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes19a20" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado19a20" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes20a21" Type="varchar" Mode="In" />
+    <Parameter Name="Martes20a21" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles20a21" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves20a21" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes20a21" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado20a21" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes21a22" Type="varchar" Mode="In" />
+    <Parameter Name="Martes21a22" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles21a22" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves21a22" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes21a22" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado21a22" Type="varchar" Mode="In" />
+    <Parameter Name="Id_Datos_Personales" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Horarios_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id_Horarios" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Horarios_Editar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id_Horarios" Type="int" Mode="In" />
+    <Parameter Name="Lunes7a8" Type="varchar" Mode="In" />
+    <Parameter Name="Martes7a8" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles7a8" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves7a8" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes7a8" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado7a8" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes8a9" Type="varchar" Mode="In" />
+    <Parameter Name="Martes8a9" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles8a9" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves8a9" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes8a9" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado8a9" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes9a10" Type="varchar" Mode="In" />
+    <Parameter Name="Martes9a10" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles9a10" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves9a10" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes9a10" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado9a10" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes10a11" Type="varchar" Mode="In" />
+    <Parameter Name="Martes10a11" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles10a11" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves10a11" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes10a11" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado10a11" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes11a12" Type="varchar" Mode="In" />
+    <Parameter Name="Martes11a12" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles11a12" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves11a12" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes11a12" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado11a12" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes12a13" Type="varchar" Mode="In" />
+    <Parameter Name="Martes12a13" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles12a13" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves12a13" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes12a13" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado12a13" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes13a14" Type="varchar" Mode="In" />
+    <Parameter Name="Martes13a14" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles13a14" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves13a14" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes13a14" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado13a14" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes14a15" Type="varchar" Mode="In" />
+    <Parameter Name="Martes14a15" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles14a15" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves14a15" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes14a15" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado14a15" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes15a16" Type="varchar" Mode="In" />
+    <Parameter Name="Martes15a16" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles15a16" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves15a16" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes15a16" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado15a16" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes16a17" Type="varchar" Mode="In" />
+    <Parameter Name="Martes16a17" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles16a17" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves16a17" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes16a17" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado16a17" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes17a18" Type="varchar" Mode="In" />
+    <Parameter Name="Martes17a18" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles17a18" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves17a18" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes17a18" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado17a18" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes18a19" Type="varchar" Mode="In" />
+    <Parameter Name="Martes18a19" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles18a19" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves18a19" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes18a19" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado18a19" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes19a20" Type="varchar" Mode="In" />
+    <Parameter Name="Martes19a20" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles19a20" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves19a20" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes19a20" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado19a20" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes20a21" Type="varchar" Mode="In" />
+    <Parameter Name="Martes20a21" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles20a21" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves20a21" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes20a21" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado20a21" Type="varchar" Mode="In" />
+    <Parameter Name="Lunes21a22" Type="varchar" Mode="In" />
+    <Parameter Name="Martes21a22" Type="varchar" Mode="In" />
+    <Parameter Name="Miercoles21a22" Type="varchar" Mode="In" />
+    <Parameter Name="Jueves21a22" Type="varchar" Mode="In" />
+    <Parameter Name="Viernes21a22" Type="varchar" Mode="In" />
+    <Parameter Name="Sabado21a22" Type="varchar" Mode="In" />
+    <Parameter Name="Id_Datos_Personales" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Horarios_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_Horarios_GetById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id_Horarios" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="DisponibilidadHorariosModelStoreContainer">
+    <EntitySet Name="Datos_Personales" EntityType="Self.Datos_Personales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Horarios" EntityType="Self.Horarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Horarios__Id_Dat__02FC7413" Association="Self.FK__Horarios__Id_Dat__02FC7413">
+      <End Role="Datos_Personales" EntitySet="Datos_Personales" />
+      <End Role="Horarios" EntitySet="Horarios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

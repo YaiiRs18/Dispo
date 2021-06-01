@@ -1,0 +1,1270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DisponibilidadHorariosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Datos_Personales">
+    <Key>
+      <PropertyRef Name="Id_Datos_Personales" />
+    </Key>
+    <Property Name="Id_Datos_Personales" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="APaterno" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AMaterno" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Edad" Type="Int32" Nullable="false" />
+    <Property Name="Lugar_de_Nacimiento" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Estado_Civil" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CURP" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Direccion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Numero_Casa" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Numero_Celular" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Licenciatura" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Institucion_Lic" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo_Lic" Type="Int32" />
+    <Property Name="Año_Titulacion_Lic" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Maestria" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Institucion_Mae" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo_Mae" Type="Int32" />
+    <Property Name="Año_Titulacion_Mae" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Doctorado" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Institucion_Doc" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo_Doc" Type="Int32" />
+    <Property Name="Años_Titulacion_Doc" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Especializacion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Institucion_Espe" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo_Espe" Type="Int32" />
+    <Property Name="Año_Titulacion_Espe" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Curso" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Institucion_Curso" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Horas" Type="Int32" />
+    <Property Name="Fecha" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Idioma" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Habla" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Lee" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Escribe" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Dominio" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Actividad_Puesto" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Organizacion_Empresa" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Periodo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Actividad_Puesto2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Organizacion_Empresa2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Actividad_Puesto3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Organizacion_Empresa3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Actividad_Puesto_Aca" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Institucion_Aca" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Periodo_Aca" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Actividad_Puesto_Aca2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Institucion_Aca2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo_Aca2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Actividad_Puesto_Aca3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Institucion_Aca3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo_Aca3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Ingenieria_Idustrial" Type="Int32" />
+    <Property Name="Ingenieria_Sistemas" Type="Int32" />
+    <Property Name="Tics" Type="Int32" />
+    <Property Name="Ingenieria_Gestion" Type="Int32" />
+    <Property Name="Ingenieria_Logistica" Type="Int32" />
+    <Property Name="Ingenieria_Industrial_Dis" Type="Int32" />
+    <Property Name="Contador" Type="Int32" />
+    <Property Name="Ingenieria_Mecatronica" Type="Int32" />
+    <Property Name="Ingenieria_Gestion_Dis" Type="Int32" />
+    <Property Name="Ingenieria_Administracion" Type="Int32" />
+    <Property Name="Nombre_Materia_Ant" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Carrera_Ant" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Semestre_Ant" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nombre_Materia_Ant2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Ant2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Ant2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Ant3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Ant3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Ant3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Ant4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Ant4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Ant4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Ant5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Ant5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Ant5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Ant6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Ant6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Ant6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Ant7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Ant7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Ant7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Ant8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Ant8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Ant8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Ant9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Ant9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Ant9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp10" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp10" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp10" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Horarios" Relationship="Self.FK__Horarios__Id_Dat__02FC7413" FromRole="Datos_Personales" ToRole="Horarios" />
+  </EntityType>
+  <EntityType Name="Horarios">
+    <Key>
+      <PropertyRef Name="Id_Horarios" />
+    </Key>
+    <Property Name="Id_Horarios" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Lunes7a8" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Martes7a8" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles7a8" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves7a8" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes7a8" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado7a8" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lunes8a9" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Martes8a9" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles8a9" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves8a9" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes8a9" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado8a9" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lunes9a10" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Martes9a10" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles9a10" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves9a10" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes9a10" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado9a10" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lunes10a11" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Martes10a11" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles10a11" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves10a11" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes10a11" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado10a11" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lunes11a12" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Martes11a12" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles11a12" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves11a12" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes11a12" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado11a12" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lunes12a13" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Martes12a13" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles12a13" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves12a13" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes12a13" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado12a13" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lunes13a14" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Martes13a14" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles13a14" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves13a14" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes13a14" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado13a14" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lunes14a15" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Martes14a15" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles14a15" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves14a15" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes14a15" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado14a15" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lunes15a16" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Martes15a16" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles15a16" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves15a16" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes15a16" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado15a16" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lunes16a17" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Martes16a17" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles16a17" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves16a17" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes16a17" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado16a17" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lunes17a18" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Martes17a18" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles17a18" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves17a18" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes17a18" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado17a18" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lunes18a19" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Martes18a19" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles18a19" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves18a19" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes18a19" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado18a19" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lunes19a20" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Martes19a20" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles19a20" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves19a20" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes19a20" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado19a20" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lunes20a21" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Martes20a21" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles20a21" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves20a21" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes20a21" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado20a21" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Lunes21a22" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Martes21a22" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles21a22" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves21a22" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes21a22" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado21a22" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Datos_Personales" Type="Int32" />
+    <NavigationProperty Name="Datos_Personales" Relationship="Self.FK__Horarios__Id_Dat__02FC7413" FromRole="Horarios" ToRole="Datos_Personales" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK__Horarios__Id_Dat__02FC7413">
+    <End Role="Datos_Personales" Type="Self.Datos_Personales" Multiplicity="0..1" />
+    <End Role="Horarios" Type="Self.Horarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Datos_Personales">
+        <PropertyRef Name="Id_Datos_Personales" />
+      </Principal>
+      <Dependent Role="Horarios">
+        <PropertyRef Name="Id_Datos_Personales" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DisponibilidadHorariosEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Datos_Personales" EntityType="Self.Datos_Personales" />
+    <EntitySet Name="Horarios" EntityType="Self.Horarios" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <AssociationSet Name="FK__Horarios__Id_Dat__02FC7413" Association="Self.FK__Horarios__Id_Dat__02FC7413">
+      <End Role="Datos_Personales" EntitySet="Datos_Personales" />
+      <End Role="Horarios" EntitySet="Horarios" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Datos_Personales_Add">
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="APaterno" Mode="In" Type="String" />
+      <Parameter Name="AMaterno" Mode="In" Type="String" />
+      <Parameter Name="Edad" Mode="In" Type="Int32" />
+      <Parameter Name="Lugar_de_Nacimiento" Mode="In" Type="String" />
+      <Parameter Name="Estado_Civil" Mode="In" Type="String" />
+      <Parameter Name="CURP" Mode="In" Type="String" />
+      <Parameter Name="Direccion" Mode="In" Type="String" />
+      <Parameter Name="Numero_Casa" Mode="In" Type="String" />
+      <Parameter Name="Numero_Celular" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Licenciatura" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Lic" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Lic" Mode="In" Type="Int32" />
+      <Parameter Name="Año_Titulacion_Lic" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Maestria" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Mae" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Mae" Mode="In" Type="Int32" />
+      <Parameter Name="Año_Titulacion_Mae" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Doctorado" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Doc" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Doc" Mode="In" Type="Int32" />
+      <Parameter Name="Años_Titulacion_Doc" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Especializacion" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Espe" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Espe" Mode="In" Type="Int32" />
+      <Parameter Name="Año_Titulacion_Espe" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Curso" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Curso" Mode="In" Type="String" />
+      <Parameter Name="Horas" Mode="In" Type="Int32" />
+      <Parameter Name="Fecha" Mode="In" Type="String" />
+      <Parameter Name="Idioma" Mode="In" Type="String" />
+      <Parameter Name="Habla" Mode="In" Type="String" />
+      <Parameter Name="Lee" Mode="In" Type="String" />
+      <Parameter Name="Escribe" Mode="In" Type="String" />
+      <Parameter Name="Dominio" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto" Mode="In" Type="String" />
+      <Parameter Name="Organizacion_Empresa" Mode="In" Type="String" />
+      <Parameter Name="Periodo" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto2" Mode="In" Type="String" />
+      <Parameter Name="Organizacion_Empresa2" Mode="In" Type="String" />
+      <Parameter Name="Periodo2" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto3" Mode="In" Type="String" />
+      <Parameter Name="Organizacion_Empresa3" Mode="In" Type="String" />
+      <Parameter Name="Periodo3" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto_Aca" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Aca" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Aca" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto_Aca2" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Aca2" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Aca2" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto_Aca3" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Aca3" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Aca3" Mode="In" Type="String" />
+      <Parameter Name="Ingenieria_Idustrial" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Sistemas" Mode="In" Type="Int32" />
+      <Parameter Name="Tics" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Gestion" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Logistica" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Industrial_Dis" Mode="In" Type="Int32" />
+      <Parameter Name="Contador" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Mecatronica" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Gestion_Dis" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Administracion" Mode="In" Type="Int32" />
+      <Parameter Name="Nombre_Materia_Ant" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant2" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant2" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant2" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant3" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant3" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant3" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant4" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant4" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant4" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant5" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant5" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant5" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant6" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant6" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant6" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant7" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant7" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant7" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant8" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant8" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant8" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant9" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant9" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant9" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp2" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp2" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp2" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp3" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp3" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp3" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp4" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp4" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp4" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp5" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp5" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp5" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp6" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp6" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp6" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp7" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp7" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp7" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp8" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp8" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp8" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp9" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp9" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp9" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp10" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp10" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp10" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Datos_Personales_Delete">
+      <Parameter Name="Id_Datos_Personales" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Datos_Personales_Editar">
+      <Parameter Name="Id_Datos_Personales" Mode="In" Type="Int32" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="APaterno" Mode="In" Type="String" />
+      <Parameter Name="AMaterno" Mode="In" Type="String" />
+      <Parameter Name="Edad" Mode="In" Type="Int32" />
+      <Parameter Name="Lugar_de_Nacimiento" Mode="In" Type="String" />
+      <Parameter Name="Estado_Civil" Mode="In" Type="String" />
+      <Parameter Name="CURP" Mode="In" Type="String" />
+      <Parameter Name="Direccion" Mode="In" Type="String" />
+      <Parameter Name="Numero_Casa" Mode="In" Type="String" />
+      <Parameter Name="Numero_Celular" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Licenciatura" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Lic" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Lic" Mode="In" Type="Int32" />
+      <Parameter Name="Año_Titulacion_Lic" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Maestria" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Mae" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Mae" Mode="In" Type="Int32" />
+      <Parameter Name="Año_Titulacion_Mae" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Doctorado" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Doc" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Doc" Mode="In" Type="Int32" />
+      <Parameter Name="Años_Titulacion_Doc" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Especializacion" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Espe" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Espe" Mode="In" Type="Int32" />
+      <Parameter Name="Año_Titulacion_Espe" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Curso" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Curso" Mode="In" Type="String" />
+      <Parameter Name="Horas" Mode="In" Type="Int32" />
+      <Parameter Name="Fecha" Mode="In" Type="String" />
+      <Parameter Name="Idioma" Mode="In" Type="String" />
+      <Parameter Name="Habla" Mode="In" Type="String" />
+      <Parameter Name="Lee" Mode="In" Type="String" />
+      <Parameter Name="Escribe" Mode="In" Type="String" />
+      <Parameter Name="Dominio" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto" Mode="In" Type="String" />
+      <Parameter Name="Organizacion_Empresa" Mode="In" Type="String" />
+      <Parameter Name="Periodo" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto2" Mode="In" Type="String" />
+      <Parameter Name="Organizacion_Empresa2" Mode="In" Type="String" />
+      <Parameter Name="Periodo2" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto3" Mode="In" Type="String" />
+      <Parameter Name="Organizacion_Empresa3" Mode="In" Type="String" />
+      <Parameter Name="Periodo3" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto_Aca" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Aca" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Aca" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto_Aca2" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Aca2" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Aca2" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto_Aca3" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Aca3" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Aca3" Mode="In" Type="String" />
+      <Parameter Name="Ingenieria_Idustrial" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Sistemas" Mode="In" Type="Int32" />
+      <Parameter Name="Tics" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Gestion" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Logistica" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Industrial_Dis" Mode="In" Type="Int32" />
+      <Parameter Name="Contador" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Mecatronica" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Gestion_Dis" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Administracion" Mode="In" Type="Int32" />
+      <Parameter Name="Nombre_Materia_Ant" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant2" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant2" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant2" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant3" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant3" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant3" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant4" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant4" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant4" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant5" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant5" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant5" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant6" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant6" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant6" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant7" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant7" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant7" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant8" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant8" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant8" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant9" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant9" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant9" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp2" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp2" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp2" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp3" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp3" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp3" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp4" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp4" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp4" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp5" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp5" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp5" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp6" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp6" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp6" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp7" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp7" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp7" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp8" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp8" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp8" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp9" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp9" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp9" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp10" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp10" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp10" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Datos_Personales_GetAll" ReturnType="Collection(DisponibilidadHorariosModel.SP_Datos_Personales_GetAll_Result)" />
+    <FunctionImport Name="SP_Datos_Personales_GetById" ReturnType="Collection(DisponibilidadHorariosModel.SP_Datos_Personales_GetById_Result)">
+      <Parameter Name="Id_Datos_Personales" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DatosANDHorariosDelete">
+      <Parameter Name="Id_Datos_Personales" Mode="In" Type="Int32" />
+      <Parameter Name="Id_Horarios" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetByIdDP" ReturnType="Collection(DisponibilidadHorariosModel.SP_GetByIdDP_Result)">
+      <Parameter Name="Id_Datos_Personales" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Horarios_Add">
+      <Parameter Name="Lunes7a8" Mode="In" Type="String" />
+      <Parameter Name="Martes7a8" Mode="In" Type="String" />
+      <Parameter Name="Miercoles7a8" Mode="In" Type="String" />
+      <Parameter Name="Jueves7a8" Mode="In" Type="String" />
+      <Parameter Name="Viernes7a8" Mode="In" Type="String" />
+      <Parameter Name="Sabado7a8" Mode="In" Type="String" />
+      <Parameter Name="Lunes8a9" Mode="In" Type="String" />
+      <Parameter Name="Martes8a9" Mode="In" Type="String" />
+      <Parameter Name="Miercoles8a9" Mode="In" Type="String" />
+      <Parameter Name="Jueves8a9" Mode="In" Type="String" />
+      <Parameter Name="Viernes8a9" Mode="In" Type="String" />
+      <Parameter Name="Sabado8a9" Mode="In" Type="String" />
+      <Parameter Name="Lunes9a10" Mode="In" Type="String" />
+      <Parameter Name="Martes9a10" Mode="In" Type="String" />
+      <Parameter Name="Miercoles9a10" Mode="In" Type="String" />
+      <Parameter Name="Jueves9a10" Mode="In" Type="String" />
+      <Parameter Name="Viernes9a10" Mode="In" Type="String" />
+      <Parameter Name="Sabado9a10" Mode="In" Type="String" />
+      <Parameter Name="Lunes10a11" Mode="In" Type="String" />
+      <Parameter Name="Martes10a11" Mode="In" Type="String" />
+      <Parameter Name="Miercoles10a11" Mode="In" Type="String" />
+      <Parameter Name="Jueves10a11" Mode="In" Type="String" />
+      <Parameter Name="Viernes10a11" Mode="In" Type="String" />
+      <Parameter Name="Sabado10a11" Mode="In" Type="String" />
+      <Parameter Name="Lunes11a12" Mode="In" Type="String" />
+      <Parameter Name="Martes11a12" Mode="In" Type="String" />
+      <Parameter Name="Miercoles11a12" Mode="In" Type="String" />
+      <Parameter Name="Jueves11a12" Mode="In" Type="String" />
+      <Parameter Name="Viernes11a12" Mode="In" Type="String" />
+      <Parameter Name="Sabado11a12" Mode="In" Type="String" />
+      <Parameter Name="Lunes12a13" Mode="In" Type="String" />
+      <Parameter Name="Martes12a13" Mode="In" Type="String" />
+      <Parameter Name="Miercoles12a13" Mode="In" Type="String" />
+      <Parameter Name="Jueves12a13" Mode="In" Type="String" />
+      <Parameter Name="Viernes12a13" Mode="In" Type="String" />
+      <Parameter Name="Sabado12a13" Mode="In" Type="String" />
+      <Parameter Name="Lunes13a14" Mode="In" Type="String" />
+      <Parameter Name="Martes13a14" Mode="In" Type="String" />
+      <Parameter Name="Miercoles13a14" Mode="In" Type="String" />
+      <Parameter Name="Jueves13a14" Mode="In" Type="String" />
+      <Parameter Name="Viernes13a14" Mode="In" Type="String" />
+      <Parameter Name="Sabado13a14" Mode="In" Type="String" />
+      <Parameter Name="Lunes14a15" Mode="In" Type="String" />
+      <Parameter Name="Martes14a15" Mode="In" Type="String" />
+      <Parameter Name="Miercoles14a15" Mode="In" Type="String" />
+      <Parameter Name="Jueves14a15" Mode="In" Type="String" />
+      <Parameter Name="Viernes14a15" Mode="In" Type="String" />
+      <Parameter Name="Sabado14a15" Mode="In" Type="String" />
+      <Parameter Name="Lunes15a16" Mode="In" Type="String" />
+      <Parameter Name="Martes15a16" Mode="In" Type="String" />
+      <Parameter Name="Miercoles15a16" Mode="In" Type="String" />
+      <Parameter Name="Jueves15a16" Mode="In" Type="String" />
+      <Parameter Name="Viernes15a16" Mode="In" Type="String" />
+      <Parameter Name="Sabado15a16" Mode="In" Type="String" />
+      <Parameter Name="Lunes16a17" Mode="In" Type="String" />
+      <Parameter Name="Martes16a17" Mode="In" Type="String" />
+      <Parameter Name="Miercoles16a17" Mode="In" Type="String" />
+      <Parameter Name="Jueves16a17" Mode="In" Type="String" />
+      <Parameter Name="Viernes16a17" Mode="In" Type="String" />
+      <Parameter Name="Sabado16a17" Mode="In" Type="String" />
+      <Parameter Name="Lunes17a18" Mode="In" Type="String" />
+      <Parameter Name="Martes17a18" Mode="In" Type="String" />
+      <Parameter Name="Miercoles17a18" Mode="In" Type="String" />
+      <Parameter Name="Jueves17a18" Mode="In" Type="String" />
+      <Parameter Name="Viernes17a18" Mode="In" Type="String" />
+      <Parameter Name="Sabado17a18" Mode="In" Type="String" />
+      <Parameter Name="Lunes18a19" Mode="In" Type="String" />
+      <Parameter Name="Martes18a19" Mode="In" Type="String" />
+      <Parameter Name="Miercoles18a19" Mode="In" Type="String" />
+      <Parameter Name="Jueves18a19" Mode="In" Type="String" />
+      <Parameter Name="Viernes18a19" Mode="In" Type="String" />
+      <Parameter Name="Sabado18a19" Mode="In" Type="String" />
+      <Parameter Name="Lunes19a20" Mode="In" Type="String" />
+      <Parameter Name="Martes19a20" Mode="In" Type="String" />
+      <Parameter Name="Miercoles19a20" Mode="In" Type="String" />
+      <Parameter Name="Jueves19a20" Mode="In" Type="String" />
+      <Parameter Name="Viernes19a20" Mode="In" Type="String" />
+      <Parameter Name="Sabado19a20" Mode="In" Type="String" />
+      <Parameter Name="Lunes20a21" Mode="In" Type="String" />
+      <Parameter Name="Martes20a21" Mode="In" Type="String" />
+      <Parameter Name="Miercoles20a21" Mode="In" Type="String" />
+      <Parameter Name="Jueves20a21" Mode="In" Type="String" />
+      <Parameter Name="Viernes20a21" Mode="In" Type="String" />
+      <Parameter Name="Sabado20a21" Mode="In" Type="String" />
+      <Parameter Name="Lunes21a22" Mode="In" Type="String" />
+      <Parameter Name="Martes21a22" Mode="In" Type="String" />
+      <Parameter Name="Miercoles21a22" Mode="In" Type="String" />
+      <Parameter Name="Jueves21a22" Mode="In" Type="String" />
+      <Parameter Name="Viernes21a22" Mode="In" Type="String" />
+      <Parameter Name="Sabado21a22" Mode="In" Type="String" />
+      <Parameter Name="Id_Datos_Personales" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Horarios_Delete">
+      <Parameter Name="Id_Horarios" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Horarios_Editar">
+      <Parameter Name="Id_Horarios" Mode="In" Type="Int32" />
+      <Parameter Name="Lunes7a8" Mode="In" Type="String" />
+      <Parameter Name="Martes7a8" Mode="In" Type="String" />
+      <Parameter Name="Miercoles7a8" Mode="In" Type="String" />
+      <Parameter Name="Jueves7a8" Mode="In" Type="String" />
+      <Parameter Name="Viernes7a8" Mode="In" Type="String" />
+      <Parameter Name="Sabado7a8" Mode="In" Type="String" />
+      <Parameter Name="Lunes8a9" Mode="In" Type="String" />
+      <Parameter Name="Martes8a9" Mode="In" Type="String" />
+      <Parameter Name="Miercoles8a9" Mode="In" Type="String" />
+      <Parameter Name="Jueves8a9" Mode="In" Type="String" />
+      <Parameter Name="Viernes8a9" Mode="In" Type="String" />
+      <Parameter Name="Sabado8a9" Mode="In" Type="String" />
+      <Parameter Name="Lunes9a10" Mode="In" Type="String" />
+      <Parameter Name="Martes9a10" Mode="In" Type="String" />
+      <Parameter Name="Miercoles9a10" Mode="In" Type="String" />
+      <Parameter Name="Jueves9a10" Mode="In" Type="String" />
+      <Parameter Name="Viernes9a10" Mode="In" Type="String" />
+      <Parameter Name="Sabado9a10" Mode="In" Type="String" />
+      <Parameter Name="Lunes10a11" Mode="In" Type="String" />
+      <Parameter Name="Martes10a11" Mode="In" Type="String" />
+      <Parameter Name="Miercoles10a11" Mode="In" Type="String" />
+      <Parameter Name="Jueves10a11" Mode="In" Type="String" />
+      <Parameter Name="Viernes10a11" Mode="In" Type="String" />
+      <Parameter Name="Sabado10a11" Mode="In" Type="String" />
+      <Parameter Name="Lunes11a12" Mode="In" Type="String" />
+      <Parameter Name="Martes11a12" Mode="In" Type="String" />
+      <Parameter Name="Miercoles11a12" Mode="In" Type="String" />
+      <Parameter Name="Jueves11a12" Mode="In" Type="String" />
+      <Parameter Name="Viernes11a12" Mode="In" Type="String" />
+      <Parameter Name="Sabado11a12" Mode="In" Type="String" />
+      <Parameter Name="Lunes12a13" Mode="In" Type="String" />
+      <Parameter Name="Martes12a13" Mode="In" Type="String" />
+      <Parameter Name="Miercoles12a13" Mode="In" Type="String" />
+      <Parameter Name="Jueves12a13" Mode="In" Type="String" />
+      <Parameter Name="Viernes12a13" Mode="In" Type="String" />
+      <Parameter Name="Sabado12a13" Mode="In" Type="String" />
+      <Parameter Name="Lunes13a14" Mode="In" Type="String" />
+      <Parameter Name="Martes13a14" Mode="In" Type="String" />
+      <Parameter Name="Miercoles13a14" Mode="In" Type="String" />
+      <Parameter Name="Jueves13a14" Mode="In" Type="String" />
+      <Parameter Name="Viernes13a14" Mode="In" Type="String" />
+      <Parameter Name="Sabado13a14" Mode="In" Type="String" />
+      <Parameter Name="Lunes14a15" Mode="In" Type="String" />
+      <Parameter Name="Martes14a15" Mode="In" Type="String" />
+      <Parameter Name="Miercoles14a15" Mode="In" Type="String" />
+      <Parameter Name="Jueves14a15" Mode="In" Type="String" />
+      <Parameter Name="Viernes14a15" Mode="In" Type="String" />
+      <Parameter Name="Sabado14a15" Mode="In" Type="String" />
+      <Parameter Name="Lunes15a16" Mode="In" Type="String" />
+      <Parameter Name="Martes15a16" Mode="In" Type="String" />
+      <Parameter Name="Miercoles15a16" Mode="In" Type="String" />
+      <Parameter Name="Jueves15a16" Mode="In" Type="String" />
+      <Parameter Name="Viernes15a16" Mode="In" Type="String" />
+      <Parameter Name="Sabado15a16" Mode="In" Type="String" />
+      <Parameter Name="Lunes16a17" Mode="In" Type="String" />
+      <Parameter Name="Martes16a17" Mode="In" Type="String" />
+      <Parameter Name="Miercoles16a17" Mode="In" Type="String" />
+      <Parameter Name="Jueves16a17" Mode="In" Type="String" />
+      <Parameter Name="Viernes16a17" Mode="In" Type="String" />
+      <Parameter Name="Sabado16a17" Mode="In" Type="String" />
+      <Parameter Name="Lunes17a18" Mode="In" Type="String" />
+      <Parameter Name="Martes17a18" Mode="In" Type="String" />
+      <Parameter Name="Miercoles17a18" Mode="In" Type="String" />
+      <Parameter Name="Jueves17a18" Mode="In" Type="String" />
+      <Parameter Name="Viernes17a18" Mode="In" Type="String" />
+      <Parameter Name="Sabado17a18" Mode="In" Type="String" />
+      <Parameter Name="Lunes18a19" Mode="In" Type="String" />
+      <Parameter Name="Martes18a19" Mode="In" Type="String" />
+      <Parameter Name="Miercoles18a19" Mode="In" Type="String" />
+      <Parameter Name="Jueves18a19" Mode="In" Type="String" />
+      <Parameter Name="Viernes18a19" Mode="In" Type="String" />
+      <Parameter Name="Sabado18a19" Mode="In" Type="String" />
+      <Parameter Name="Lunes19a20" Mode="In" Type="String" />
+      <Parameter Name="Martes19a20" Mode="In" Type="String" />
+      <Parameter Name="Miercoles19a20" Mode="In" Type="String" />
+      <Parameter Name="Jueves19a20" Mode="In" Type="String" />
+      <Parameter Name="Viernes19a20" Mode="In" Type="String" />
+      <Parameter Name="Sabado19a20" Mode="In" Type="String" />
+      <Parameter Name="Lunes20a21" Mode="In" Type="String" />
+      <Parameter Name="Martes20a21" Mode="In" Type="String" />
+      <Parameter Name="Miercoles20a21" Mode="In" Type="String" />
+      <Parameter Name="Jueves20a21" Mode="In" Type="String" />
+      <Parameter Name="Viernes20a21" Mode="In" Type="String" />
+      <Parameter Name="Sabado20a21" Mode="In" Type="String" />
+      <Parameter Name="Lunes21a22" Mode="In" Type="String" />
+      <Parameter Name="Martes21a22" Mode="In" Type="String" />
+      <Parameter Name="Miercoles21a22" Mode="In" Type="String" />
+      <Parameter Name="Jueves21a22" Mode="In" Type="String" />
+      <Parameter Name="Viernes21a22" Mode="In" Type="String" />
+      <Parameter Name="Sabado21a22" Mode="In" Type="String" />
+      <Parameter Name="Id_Datos_Personales" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Horarios_GetAll" ReturnType="Collection(DisponibilidadHorariosModel.SP_Horarios_GetAll_Result)" />
+    <FunctionImport Name="SP_Horarios_GetById" ReturnType="Collection(DisponibilidadHorariosModel.SP_Horarios_GetById_Result)">
+      <Parameter Name="Id_Horarios" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="SP_Datos_Personales_GetAll_Result">
+    <Property Type="Int32" Name="Id_Datos_Personales" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="25" />
+    <Property Type="String" Name="APaterno" Nullable="false" MaxLength="25" />
+    <Property Type="String" Name="AMaterno" Nullable="false" MaxLength="25" />
+    <Property Type="Int32" Name="Edad" Nullable="false" />
+    <Property Type="String" Name="Lugar_de_Nacimiento" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Estado_Civil" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="CURP" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Direccion" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Numero_Casa" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Numero_Celular" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Nombre_Licenciatura" Nullable="true" MaxLength="25" />
+    <Property Type="String" Name="Institucion_Lic" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Periodo_Lic" Nullable="true" />
+    <Property Type="String" Name="Año_Titulacion_Lic" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Maestria" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Mae" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Periodo_Mae" Nullable="true" />
+    <Property Type="String" Name="Año_Titulacion_Mae" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Doctorado" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Doc" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Periodo_Doc" Nullable="true" />
+    <Property Type="String" Name="Años_Titulacion_Doc" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Especializacion" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Espe" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Periodo_Espe" Nullable="true" />
+    <Property Type="String" Name="Año_Titulacion_Espe" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Curso" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Curso" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Horas" Nullable="true" />
+    <Property Type="String" Name="Fecha" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Idioma" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Habla" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Lee" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Escribe" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Dominio" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Organizacion_Empresa" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Periodo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Organizacion_Empresa2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Periodo2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Organizacion_Empresa3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Periodo3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto_Aca" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Aca" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Periodo_Aca" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto_Aca2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Aca2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Periodo_Aca2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto_Aca3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Aca3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Periodo_Aca3" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Ingenieria_Idustrial" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Sistemas" Nullable="true" />
+    <Property Type="Int32" Name="Tics" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Gestion" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Logistica" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Industrial_Dis" Nullable="true" />
+    <Property Type="Int32" Name="Contador" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Mecatronica" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Gestion_Dis" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Administracion" Nullable="true" />
+    <Property Type="String" Name="Nombre_Materia_Ant" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp10" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp10" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp10" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="SP_Datos_Personales_GetById_Result">
+    <Property Type="Int32" Name="Id_Datos_Personales" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="25" />
+    <Property Type="String" Name="APaterno" Nullable="false" MaxLength="25" />
+    <Property Type="String" Name="AMaterno" Nullable="false" MaxLength="25" />
+    <Property Type="Int32" Name="Edad" Nullable="false" />
+    <Property Type="String" Name="Lugar_de_Nacimiento" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Estado_Civil" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="CURP" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Direccion" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Numero_Casa" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Numero_Celular" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Nombre_Licenciatura" Nullable="true" MaxLength="25" />
+    <Property Type="String" Name="Institucion_Lic" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Periodo_Lic" Nullable="true" />
+    <Property Type="String" Name="Año_Titulacion_Lic" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Maestria" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Mae" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Periodo_Mae" Nullable="true" />
+    <Property Type="String" Name="Año_Titulacion_Mae" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Doctorado" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Doc" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Periodo_Doc" Nullable="true" />
+    <Property Type="String" Name="Años_Titulacion_Doc" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Especializacion" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Espe" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Periodo_Espe" Nullable="true" />
+    <Property Type="String" Name="Año_Titulacion_Espe" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Curso" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Curso" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Horas" Nullable="true" />
+    <Property Type="String" Name="Fecha" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Idioma" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Habla" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Lee" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Escribe" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Dominio" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Organizacion_Empresa" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Periodo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Organizacion_Empresa2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Periodo2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Organizacion_Empresa3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Periodo3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto_Aca" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Aca" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Periodo_Aca" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto_Aca2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Aca2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Periodo_Aca2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto_Aca3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Aca3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Periodo_Aca3" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Ingenieria_Idustrial" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Sistemas" Nullable="true" />
+    <Property Type="Int32" Name="Tics" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Gestion" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Logistica" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Industrial_Dis" Nullable="true" />
+    <Property Type="Int32" Name="Contador" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Mecatronica" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Gestion_Dis" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Administracion" Nullable="true" />
+    <Property Type="String" Name="Nombre_Materia_Ant" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp10" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp10" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp10" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="SP_GetByIdDP_Result">
+    <Property Type="Int32" Name="Id_Horarios" Nullable="false" />
+    <Property Type="String" Name="Lunes7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes21a22" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes21a22" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles21a22" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves21a22" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes21a22" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado21a22" Nullable="true" MaxLength="15" />
+    <Property Type="Int32" Name="Id_Datos_Personales" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_Horarios_GetAll_Result">
+    <Property Type="Int32" Name="Id_Horarios" Nullable="false" />
+    <Property Type="String" Name="Lunes7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes21a22" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes21a22" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles21a22" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves21a22" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes21a22" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado21a22" Nullable="true" MaxLength="15" />
+    <Property Type="Int32" Name="Id_Datos_Personales" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_Horarios_GetById_Result">
+    <Property Type="Int32" Name="Id_Horarios" Nullable="false" />
+    <Property Type="String" Name="Lunes7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado7a8" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado8a9" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado9a10" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado10a11" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado11a12" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado12a13" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado13a14" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado14a15" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado15a16" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado16a17" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado17a18" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado18a19" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado19a20" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado20a21" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Lunes21a22" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Martes21a22" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Miercoles21a22" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Jueves21a22" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Viernes21a22" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Sabado21a22" Nullable="true" MaxLength="15" />
+    <Property Type="Int32" Name="Id_Datos_Personales" Nullable="true" />
+  </ComplexType>
+</Schema>

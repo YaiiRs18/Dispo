@@ -1,0 +1,193 @@
+﻿@model List<ML.Entities.Horarios>
+
+
+<h2>
+    @*<a href="@Url.Action("Agregar", "Home")" class="btn btn-primary right ">  Agregar</a>*@
+    Disponibilidad Horario
+</h2>
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr class="table-info">
+            @*<td>Id_Horarios</td>*@
+            <th>Horas</th>
+
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+            <th>Sabado</th>
+            @*<td>Id_Datos_Personales</td>*@
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <th>7:00 - 8:00</th>
+                <td>@obj.Lunes7a8</td>
+                <td>@obj.Martes7a8</td>
+                <td>@obj.Miercoles7a8</td>
+                <td>@obj.Jueves7a8</td>
+                <td>@obj.Viernes7a8</td>
+                <td>@obj.Sabado7a8</td>
+
+
+
+                @*<td>
+                    @Html.ActionLink("Eliminar", "Eliminar", new { ID = obj.Id_Horarios })
+                </td>*@
+
+            </tr>
+            <tr>
+                <th>8:00 - 9:00</th>
+                <td>@obj.Lunes8a9</td>
+                <td>@obj.Martes8a9</td>
+                <td>@obj.Miercoles8a9</td>
+                <td>@obj.Jueves8a9</td>
+                <td>@obj.Viernes8a9</td>
+                <td>@obj.Sabado8a9</td>
+            </tr>
+
+            <tr>
+                <th>9:00 - 10:00</th>
+                <td>@obj.Lunes9a10</td>
+                <td>@obj.Martes9a10</td>
+                <td>@obj.Miercoles9a10</td>
+                <td>@obj.Jueves9a10</td>
+                <td>@obj.Viernes9a10</td>
+                <td>@obj.Sabado9a10</td>
+            </tr>
+
+            <tr>
+                <th>10:00 - 11:00</th>
+                <td>@obj.Lunes10a11</td>
+                <td>@obj.Martes10a11</td>
+                <td>@obj.Miercoles10a11</td>
+                <td>@obj.Jueves10a11</td>
+                <td>@obj.Viernes10a11</td>
+                <td>@obj.Sabado10a11</td>
+            </tr>
+
+            <tr>
+                <th>11:00 - 12:00</th>
+                <td>@obj.Lunes11a12</td>
+                <td>@obj.Martes11a12</td>
+                <td>@obj.Miercoles11a12</td>
+                <td>@obj.Jueves11a12</td>
+                <td>@obj.Viernes11a12</td>
+                <td>@obj.Sabado11a12</td>
+            </tr>
+
+            <tr>
+                <th>12:00 - 13:00</th>
+                <td>@obj.Lunes12a13</td>
+                <td>@obj.Martes12a13</td>
+                <td>@obj.Miercoles12a13</td>
+                <td>@obj.Jueves12a13</td>
+                <td>@obj.Viernes12a13</td>
+                <td>@obj.Sabado12a13</td>
+            </tr>
+
+            <tr>
+                <th>13:00 - 14:00</th>
+                <td>@obj.Lunes13a14</td>
+                <td>@obj.Martes13a14</td>
+                <td>@obj.Miercoles13a14</td>
+                <td>@obj.Jueves13a14</td>
+                <td>@obj.Viernes13a14</td>
+                <td>@obj.Sabado13a14</td>
+            </tr>
+
+            <tr>
+                <th>14:00 - 15:00</th>
+                <td>@obj.Lunes14a15</td>
+                <td>@obj.Martes14a15</td>
+                <td>@obj.Miercoles14a15</td>
+                <td>@obj.Jueves14a15</td>
+                <td>@obj.Viernes14a15</td>
+                <td>@obj.Sabado14a15</td>
+            </tr>
+
+            <tr>
+                <th>15:00 - 16:00</th>
+                <td>@obj.Lunes15a16</td>
+                <td>@obj.Martes15a16</td>
+                <td>@obj.Miercoles15a16</td>
+                <td>@obj.Jueves15a16</td>
+                <td>@obj.Viernes15a16</td>
+                <td>@obj.Sabado15a16</td>
+            </tr>
+
+            <tr>
+                <th>16:00 - 17:00</th>
+                <td>@obj.Lunes16a17</td>
+                <td>@obj.Martes16a17</td>
+                <td>@obj.Miercoles16a17</td>
+                <td>@obj.Jueves16a17</td>
+                <td>@obj.Viernes16a17</td>
+                <td>@obj.Sabado16a17</td>
+            </tr>
+
+            <tr>
+                <th>17:00 - 18:00</th>
+                <td>@obj.Lunes17a18</td>
+                <td>@obj.Martes17a18</td>
+                <td>@obj.Miercoles17a18</td>
+                <td>@obj.Jueves17a18</td>
+                <td>@obj.Viernes17a18</td>
+                <td>@obj.Sabado17a18</td>
+            </tr>
+
+            <tr>
+                <th>18:00 - 19:00</th>
+                <td>@obj.Lunes18a19</td>
+                <td>@obj.Martes18a19</td>
+                <td>@obj.Miercoles18a19</td>
+                <td>@obj.Jueves18a19</td>
+                <td>@obj.Viernes18a19</td>
+                <td>@obj.Sabado18a19</td>
+            </tr>
+
+            <tr>
+                <th>19:00 - 20:00</th>
+                <td>@obj.Lunes19a20</td>
+                <td>@obj.Martes19a20</td>
+                <td>@obj.Miercoles19a20</td>
+                <td>@obj.Jueves19a20</td>
+                <td>@obj.Viernes19a20</td>
+                <td>@obj.Sabado19a20</td>
+            </tr>
+
+            <tr>
+                <th>20:00 - 21:00</th>
+                <td>@obj.Lunes20a21</td>
+                <td>@obj.Martes20a21</td>
+                <td>@obj.Miercoles20a21</td>
+                <td>@obj.Jueves20a21</td>
+                <td>@obj.Viernes20a21</td>
+                <td>@obj.Sabado20a21</td>
+            </tr>
+
+            <tr>
+                <th>21:00 - 22:00</th>
+                <td>@obj.Lunes21a22</td>
+                <td>@obj.Martes21a22</td>
+                <td>@obj.Miercoles21a22</td>
+                <td>@obj.Jueves21a22</td>
+                <td>@obj.Viernes21a22</td>
+                <td>@obj.Sabado21a22</td>
+            </tr>
+            <div class="form-group" style="margin:0 auto; width: 80%;">
+                @Html.ActionLink("Eliminar ", "DeleteA", new { ID = obj.Id_Datos_Personales, ID2 = obj.Id_Horarios }, new { @class = "btn btn-danger" })
+                @Html.ActionLink(" Regresar a la lista", "Index", new { }, new { @class = "btn btn-success bi bi-arrow-return-left" })
+            </div>
+        }
+
+    </tbody>
+</table>
+
+
+

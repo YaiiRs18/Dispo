@@ -1,0 +1,595 @@
+﻿@model ML.Entities.Horarios
+
+
+<label>@ViewBag.Error</label>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+<div style=" margin: 0 auto; width: 80%;">
+    @Html.LabelFor(model => model.Id_Datos_Personales, "ID Docente", htmlAttributes: new { @class = "control-label col-md-12" })
+    @Html.EditorFor(model => model.Id_Datos_Personales, new { htmlAttributes = new { @class = "form-control col-md-2" } })
+    @Html.ValidationMessageFor(model => model.Id_Datos_Personales, "", new { @class = "text-danger" })
+</div>
+    <table class="table table-bordered table-hover">
+        
+        <thead>
+            
+            <tr class="table-info">
+                <th scope="col">Horas</th>
+                <th scope="col">Lunes</th>
+                <th scope="col">Martes</th>
+                <th scope="col">Miercoles</th>
+                <th scope="col">Jueves</th>
+                <th scope="col">Viernes</th>
+                <th scope="col">Sábado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>7:00 - 8:00</th>
+             
+                <td>
+                    
+                    <input id="lunes7a8" name="lunes7a8" type="checkbox" value="Disponible"/>
+                    <input type="hidden" name="lunes7a8" value=""/>
+                </td>
+                <td>
+                    <input id="martes7a8" name="martes7a8" type="checkbox" value="Disponible"/>
+                    <input type="hidden" value="" name="martes7a8" />
+                </td>
+                <td>
+                    <input id="miercoles7a8" name="miercoles7a8" type="checkbox" value="Disponible"/>
+                    <input type="hidden" value="" name="miercoles7a8" />
+                </td>
+                <td>
+                    <input id="jueves7a8" name="jueves7a8" type="checkbox" value="Disponible"/>
+                    <input type="hidden" value="" name="jueves7a8" />
+                </td>
+                <td>
+                    <input id="viernes7a8" name="viernes7a8" type="checkbox" value="Disponible"/>
+                    <input type="hidden" value="" name="viernes7a8" />
+                </td>
+                <td>
+                    <input id="sabado7a8" name="sabado7a8" type="checkbox" value="Disponible"/>
+                    <input type="hidden" value="" name="sabado7a8" />
+                </td>
+            </tr>
+            <tr>
+                <th>8:00 - 9:00</th>
+                <td>
+                    <input id="lunes8a9" name="lunes8a9" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="lunes8a9" />
+                </td>
+                <td>
+                    <input id="martes8a9" name="martes8a9" type="checkbox" value="Disponible"/>
+                    <input type="hidden" value="" name="martes8a9" />
+                </td>
+                <td>
+                    <input id="miercoles8a9" name="miercoles8a9" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="miercoles8a9" />
+                </td>
+                <td>
+                    <input id="jueves8a9" name="jueves8a9" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="jueves8a9" />
+                </td>
+                <td>
+                    <input id="viernes8a9" name="viernes8a9" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="viernes8a9" />
+                </td>
+                <td>
+                    <input id="sabado8a9" name="sabado8a9" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="sabado8a9" />
+                </td>
+            </tr>
+            <tr>
+                <th>9:00 - 10:00</th>
+                <td>
+                    <input id="lunes9a10" name="lunes9a10" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="lunes9a10" />
+                </td>
+                <td>
+                    <input id="martes9a10" name="martes9a10" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="martes9a10" />
+                </td>
+                <td>
+                    <input id="miercoles9a10" name="miercoles9a10" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="miercoles9a10" />
+                </td>
+                <td>
+                    <input id="jueves9a10" name="jueves9a10" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="jueves9a10" />
+                </td>
+                <td>
+                    <input id="viernes9a10" name="viernes9a10" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="viernes9a10" />
+                </td>
+                <td>
+                    <input id="sabado9a10" name="sabado9a10" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="sabado9a10" />
+                </td>
+
+            </tr>
+            <tr>
+                <th>10:00 - 11:00</th>
+                <td>
+                    <input id="lunes10A11" name="lunes10A11" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="lunes10A11" />
+                </td>
+                <td>
+                    <input id="martes10A11" name="martes10A11" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="martes10A11" />
+                </td>
+                <td>
+                    <input id="miercoles10A11" name="miercoles10A11" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="miercoles10A11" />
+                </td>
+                <td>
+                    <input id="jueves10A11" name="jueves10A11" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="jueves10A11" />
+                </td>
+                <td>
+                    <input id="viernes10A11" name="viernes10A11" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="viernes10A11" />
+                </td>
+                <td>
+                    <input id="sabado10A11" name="sabado10A11" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="sabado10A11" />
+                </td>
+
+            </tr>
+            <tr>
+                <th>11:00 - 12:00</th>
+                <td>
+                    <input id="lunes11A12" name="lunes11A12" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="lunes11A12" />
+                </td>
+                <td>
+                    <input id="martes11A12" name="martes11A12" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="martes11A12" />
+                </td>
+                <td>
+                    <input id="miercoles11A12" name="miercoles11A12" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="miercoles11A12" />
+                </td>
+                <td>
+                    <input id="jueves11A12" name="jueves11A12" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="jueves11A12" />
+                </td>
+                <td>
+                    <input id="viernes11A12" name="viernes11A12" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="viernes11A12" />
+                </td>
+                <td>
+                    <input id="sabado11A12" name="sabado11A12" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="sabado11A12" />
+                </td>
+
+            </tr>
+            <tr>
+                <th>12:00 - 13:00</th>
+                <td>
+                    <input id="lunes12a13" name="lunes12a13" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="lunes12a13" />
+                </td>
+                <td>
+                    <input id="martes12a13" name="martes12a13" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="martes12a13" />
+                </td>
+                <td>
+                    <input id="miercoles12a13" name="miercoles12a13" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="miercoles12a13" />
+                </td>
+                <td>
+                    <input id="jueves12a13" name="jueves12a13" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="jueves12a13" />
+                </td>
+                <td>
+                    <input id="viernes12a13" name="viernes12a13" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="viernes12a13" />
+                </td>
+                <td>
+                    <input id="sabado12a13" name="sabado12a13" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="sabado12a13" />
+                </td>
+
+            </tr>
+
+            <tr>
+                <th>13:00 - 14:00</th>
+                <td>
+                    <input id="lunes13a14" name="lunes13a14" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="lunes13a14" />
+                </td>
+                <td>
+                    <input id="martes13a14" name="martes13a14" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="martes13a14" />
+                </td>
+                <td>
+                    <input id="miercoles13a14" name="miercoles13a14" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="miercoles13a14" />
+                </td>
+                <td>
+                    <input id="jueves13a14" name="jueves13a14" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="jueves13a14" />
+                </td>
+                <td>
+                    <input id="viernes13a14" name="viernes13a14" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="viernes13a14" />
+                </td>
+                <td>
+                    <input id="sabado13a14" name="sabado13a14" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="sabado13a14" />
+                </td>
+
+            </tr>
+            <tr>
+                <th>14:00 - 15:00</th>
+                <td>
+                    <input id="lunes14a15" name="lunes14a15" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="lunes14a15" />
+                </td>
+                <td>
+                    <input id="martes14a15" name="martes14a15" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="martes14a15" />
+                </td>
+                <td>
+                    <input id="miercoles14a15" name="miercoles14a15" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="miercoles14a15" />
+                </td>
+                <td>
+                    <input id="jueves14a15" name="jueves14a15" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="jueves14a15" />
+                </td>
+                <td>
+                    <input id="viernes14a15" name="viernes14a15" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="viernes14a15" />
+                </td>
+                <td>
+                    <input id="sabado14a15" name="sabado14a15" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="sabado14a15" />
+                </td>
+
+            </tr>
+            <tr>
+                <th>15:00 - 16:00</th>
+                <td>
+                    <input id="lunes15a16" name="lunes15a16" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="lunes15a16" />
+                </td>
+                <td>
+                    <input id="martes15a16" name="martes15a16" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="martes15a16" />
+                </td>
+                <td>
+                    <input id="miercoles15a16" name="miercoles15a16" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="miercoles15a16" />
+                </td>
+                <td>
+                    <input id="jueves15a16" name="jueves15a16" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="jueves15a16" />
+                </td>
+                <td>
+                    <input id="viernes15a16" name="viernes15a16" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="viernes15a16" />
+                </td>
+                <td>
+                    <input id="sabado15a16" name="sabado15a16" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="sabado15a16" />
+                </td>
+
+            </tr>
+            <tr>
+                <th>16:00 - 17:00</th>
+                <td>
+                    <input id="lunes16a17" name="lunes16a17" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="lunes16a17" />
+                </td>
+                <td>
+                    <input id="martes16a17" name="martes16a17" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="martes16a17" />
+                </td>
+                <td>
+                    <input id="miercoles16a17" name="miercoles16a17" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="miercoles16a17" />
+                </td>
+                <td>
+                    <input id="jueves16a17" name="jueves16a17" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="jueves16a17" />
+                </td>
+                <td>
+                    <input id="viernes16a17" name="viernes16a17" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="viernes16a17" />
+                </td>
+                <td>
+                    <input id="sabado16a17" name="sabado16a17" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="sabado16a17" />
+                </td>
+
+            </tr>
+            <tr>
+                <th>17:00 - 18:00</th>
+                <td>
+                    <input id="lunes17a18" name="lunes17a18" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="lunes17a18" />
+                </td>
+                <td>
+                    <input id="martes17a18" name="martes17a18" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="martes17a18" />
+                </td>
+                <td>
+                    <input id="miercoles17a18" name="miercoles17a18" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="miercoles17a18" />
+                </td>
+                <td>
+                    <input id="jueves17a18" name="jueves17a18" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="jueves17a18" />
+                </td>
+                <td>
+                    <input id="viernes17a18" name="viernes17a18" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="viernes17a18" />
+                </td>
+                <td>
+                    <input id="sabado17a18" name="sabado17a18" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="sabado17a18" />
+                </td>
+
+            </tr>
+
+            <tr>
+                <th>18:00 - 19:00</th>
+                <td>
+                    <input id="lunes18a19" name="lunes18a19" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="lunes18a19" />
+                </td>
+                <td>
+                    <input id="martes18a19" name="martes18a19" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="martes18a19" />
+                </td>
+                <td>
+                    <input id="miercoles18a19" name="miercoles18a19" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="miercoles18a19" />
+                </td>
+                <td>
+                    <input id="jueves18a19" name="jueves18a19" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="jueves18a19" />
+                </td>
+                <td>
+                    <input id="viernes18a19" name="viernes18a19" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="viernes18a19" />
+                </td>
+                <td>
+                    <input id="sabado18a19" name="sabado18a19" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="sabado18a19" />
+                </td>
+
+            </tr>
+            <tr>
+                <th>19:00 - 20:00</th>
+                <td>
+                    <input id="lunes19a20" name="lunes19a20" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="lunes19a20" />
+                </td>
+                <td>
+                    <input id="martes19a20" name="martes19a20" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="martes19a20" />
+                </td>
+                <td>
+                    <input id="miercoles19a20" name="miercoles19a20" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="miercoles19a20" />
+                </td>
+                <td>
+                    <input id="jueves19a20" name="jueves19a20" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="jueves19a20" />
+                </td>
+                <td>
+                    <input id="viernes19a20" name="viernes19a20" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="viernes19a20" />
+                </td>
+                <td>
+                    <input id="sabado19a20" name="sabado19a20" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="sabado19a20" />
+                </td>
+
+            </tr>
+            <tr>
+                <th>20:00 - 21:00</th>
+                <td>
+                    <input id="lunes20a21" name="lunes20a21" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="lunes20a21" />
+                </td>
+                <td>
+                    <input id="martes20a21" name="martes20a21" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="martes20a21" />
+                </td>
+                <td>
+                    <input id="miercoles20a21" name="miercoles20a21" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="miercoles20a21" />
+                </td>
+                <td>
+                    <input id="jueves20a21" name="jueves20a21" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="jueves20a21" />
+                </td>
+                <td>
+                    <input id="viernes20a21" name="viernes20a21" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="viernes20a21" />
+                </td>
+                <td>
+                    <input id="sabado20a21" name="sabado20a21" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="sabado20a21" />
+                </td>
+
+            </tr>
+            <tr>
+                <th>21:00 - 22:00</th>
+                <td>
+                    <input id="lunes21a22" name="lunes21a22" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="lunes21a22" />
+                </td>
+                <td>
+                    <input id="martes21a22" name="martes21a22" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="martes21a22" />
+                </td>
+                <td>
+                    <input id="miercoles21a22" name="miercoles21a22" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="miercoles21a22" />
+                </td>
+                <td>
+                    <input id="jueves21a22" name="jueves21a22" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="jueves21a22" />
+                </td>
+                <td>
+                    <input id="viernes21a22" name="viernes21a22" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="viernes21a22" />
+                </td>
+                <td>
+                    <input id="sabado21a22" name="sabado21a22" type="checkbox" value="Disponible" />
+                    <input type="hidden" value="" name="sabado21a22" />
+                </td>
+
+            </tr>
+
+        </tbody>
+    </table>
+    @*<div class="form-horizontal">
+            <h4>Horarios</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+        <div class="form-group col-sm-1">
+            @Html.LabelFor(model => model.Lunes8a9, "Lunes", htmlAttributes: new { @class = "control-label col-md-6" })
+
+            @Html.CheckBox("IsActive", Model.Lunes8a9 == "x" ? true : false)
+            @Html.EditorFor(model => model.Lunes8a9, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Lunes8a9, "", new { @class = "text-danger" })
+
+        </div>
+
+            <div class="form-group col-sm-1">
+                @Html.LabelFor(model => model.Martes8a9,"Martes", htmlAttributes: new { @class = "control-label col-md-2" })
+
+                    @Html.CheckBox("IsActive", Model.Martes8a9 == "x" ? true : false)
+                    @Html.EditorFor(model => model.Martes8a9, new { htmlAttributes = new { @class = "form-control" } })
+
+                    @Html.ValidationMessageFor(model => model.Martes8a9, "", new { @class = "text-danger" })
+
+            </div>
+
+            <div class="form-group col-sm-1">
+                @Html.LabelFor(model => model.Miercoles8a9, "Miercoles", htmlAttributes: new { @class = "control-label col-md-2" })
+
+                    @Html.CheckBox("IsActive", Model.Miercoles8a9 == "x" ? true : false)
+                    @Html.EditorFor(model => model.Miercoles8a9, new { htmlAttributes = new { @class = "form-control" } })
+
+                    @Html.ValidationMessageFor(model => model.Miercoles8a9, "", new { @class = "text-danger" })
+
+            </div>
+
+            <div class="form-group col-sm-1">
+                @Html.LabelFor(model => model.Jueves8a9, "Jueves", htmlAttributes: new { @class = "control-label col-md-2" })
+
+                    @Html.CheckBox("IsActive", Model.Jueves8a9 == "x" ? true : false)
+                    @Html.EditorFor(model => model.Jueves8a9, new { htmlAttributes = new { @class = "form-control" } })
+
+                    @Html.ValidationMessageFor(model => model.Jueves8a9, "", new { @class = "text-danger" })
+
+            </div>
+
+            <div class="form-group col-sm-1">
+                @Html.LabelFor(model => model.Viernes8a9,"Viernes", htmlAttributes: new { @class = "control-label col-md-2" })
+
+                    @Html.CheckBox("IsActive", Model.Viernes8a9 == "x" ? true : false)
+                    @Html.EditorFor(model => model.Viernes8a9, new { htmlAttributes = new { @class = "form-control" } })
+
+                    @Html.ValidationMessageFor(model => model.Viernes8a9, "", new { @class = "text-danger" })
+
+            </div>
+
+            <div class="form-group col-sm-1">
+                @Html.LabelFor(model => model.Sabado8a9,"Sabado", htmlAttributes: new { @class = "control-label col-md-2" })
+
+                    @Html.CheckBox("IsActive", Model.Sabado8a9 == "x" ? true : false)
+                    @Html.EditorFor(model => model.Sabado8a9, new { htmlAttributes = new { @class = "form-control" } })
+
+                    @Html.ValidationMessageFor(model => model.Sabado8a9, "", new { @class = "text-danger" })
+
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Lunes10a11, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.CheckBox("IsActive", Model.Lunes10a11 == "x" ? true : false)
+                    @Html.EditorFor(model => model.Lunes10a11, new { htmlAttributes = new { @class = "form-control" } })
+
+                    @Html.ValidationMessageFor(model => model.Lunes10a11, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Martes10a11, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.CheckBox("IsActive", Model.Martes10a11 == "x" ? true : false)
+                    @Html.EditorFor(model => model.Martes10a11, new { htmlAttributes = new { @class = "form-control" } })
+
+                    @Html.ValidationMessageFor(model => model.Martes10a11, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Miercoles10a11, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.CheckBox("IsActive", Model.Miercoles10a11 == "x" ? true : false)
+                    @Html.EditorFor(model => model.Miercoles10a11, new { htmlAttributes = new { @class = "form-control" } })
+
+                    @Html.ValidationMessageFor(model => model.Miercoles10a11, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Jueves10a11, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.CheckBox("IsActive", Model.Jueves10a11 == "x" ? true : false)
+                    @Html.EditorFor(model => model.Jueves10a11, new { htmlAttributes = new { @class = "form-control" } })
+
+                    @Html.ValidationMessageFor(model => model.Jueves10a11, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Viernes10a11, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.CheckBox("IsActive", Model.Viernes10a11 == "x" ? true : false)
+                    @Html.EditorFor(model => model.Viernes10a11, new { htmlAttributes = new { @class = "form-control" } })
+
+                    @Html.ValidationMessageFor(model => model.Viernes10a11, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Sabado10a11, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.CheckBox("IsActive", Model.Sabado10a11 == "x" ? true : false)
+                    @Html.EditorFor(model => model.Sabado10a11, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Sabado10a11, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+    <div cclass="form-group" style="margin:0 auto; width: 100px;">
+
+        <input type="submit" id="Guardar" value="Guardar" class="btn btn-success btn-lg" />
+    </div>
+    @*</div>*@
+}
+
+@*<div>
+        @Html.ActionLink("Back to List", "Index1")
+    </div>*@
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Content/Site.js"></script>
+
+}
+
+
